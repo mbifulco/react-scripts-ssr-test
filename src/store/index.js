@@ -11,7 +11,14 @@ export default function configureStore(history) {
 
   });
 
+  const statefeeder = {
+    a: 'mike',
+    b: 'is',
+    c: 'testing',
+  };
+
   const initState = {
+    ...statefeeder,
   };
 
   const middlewares = [routerMiddleware(history), thunk];

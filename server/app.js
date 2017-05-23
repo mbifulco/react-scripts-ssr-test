@@ -1,4 +1,5 @@
 require('ignore-styles');
+
 const bodyParser = require('body-parser');
 const compression = require('compression');
 const express = require('express');
@@ -7,10 +8,13 @@ const path = require('path');
 
 require('babel-register')({ ignore: /\/(build|jest|node_modules)\//, presets: [
     'react',
+    'es2015',
     ['env', {
       "modules" : "commonjs",
     }],
-  ] });
+  ],
+  plugins: ['transform-object-rest-spread'] });
+require('babel-polyfill');
 
 // routes
 const index = require('./routes/index');
