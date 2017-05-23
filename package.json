@@ -1,0 +1,32 @@
+{
+  "name": "react-scripts-ssr-test",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-register": "^6.24.1",
+    "body-parser": "^1.17.2",
+    "ignore-styles": "^5.0.1",
+    "morgan": "^1.8.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router-dom": "^4.1.1",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^4.8.0",
+    "redux-responsive": "^4.3.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "start:server": "NODE_ENV=development node server/index.js",
+    "start:prod": "NODE_ENV=producton node server/index.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
